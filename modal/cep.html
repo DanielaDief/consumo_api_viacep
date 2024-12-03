@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="center-container">
+        <h1>Consulta de CEP</h1>
+        <label for="InputCep">Digite o CEP:</label>
+        <input type="text" id="InputCep">
+        <button onclick="consultarCep()">Consultar</button>
+        <div id="dados"></div>
+    </div>
+    <div class="overlay" id="meuPopup">
+        <div class="popup">
+            <div id="cepInfo"></div>
+            <button id="fecharPopup" class="btn btn-outline-secondary" onclick="fecharPopup()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
